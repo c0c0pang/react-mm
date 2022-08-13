@@ -3,11 +3,18 @@ import "./App.css";
 import { AllContents } from "./styledComponent";
 import { GlobalStyles } from "./styles";
 import Header from "./Header";
+import Nav from "./Nav";
+import Content from "./Content";
 function App() {
   return (
-    <AllContents>
-      <Header></Header>
-    </AllContents>
+    <>
+      <GlobalStyles />
+      <AllContents>
+        <Header></Header>
+        <Nav></Nav>
+        <Content></Content>
+      </AllContents>
+    </>
   );
 }
 

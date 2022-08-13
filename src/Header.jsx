@@ -1,9 +1,12 @@
 import React from "react";
-import { HeaderDiv, Title } from "./styledComponent";
+import { HeaderDiv, Title, Logout } from "./styledComponent";
 function Header() {
   return (
     <HeaderDiv>
-      <Title>MM!</Title>
+      <Title>
+        MM!
+        <Logout>로그아웃</Logout>
+      </Title>
     </HeaderDiv>
   );
 }
