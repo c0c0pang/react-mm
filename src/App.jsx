@@ -7,6 +7,8 @@ import Nav from "./Nav";
 import Content from "./Content";
 import MovieSite from "./MovieSite";
 import Footer from "./Footer";
+import Board from "./Board"
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
@@ -14,7 +16,11 @@ function App() {
       <AllContents>
         <Header></Header>
         <Nav></Nav>
-        <Content></Content>
+        {/* <Content></Content> */}
+        <Routes>
+            <Route path="/" element={<Content />}></Route>
+            <Route path="/Board" element={<Board />}></Route>
+          </Routes>
         <MovieSite></MovieSite>
         <Footer></Footer>
       </AllContents>
