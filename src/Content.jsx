@@ -10,6 +10,7 @@ import {
   SubSlideDiv,
   SubMovieTitle,
   SubMovieGrade,
+  MainGlass,
 } from "./styledComponent";
 import 토르 from "./img/토르.jpg";
 import 탑건 from "./img/탑건.jpg";
@@ -41,6 +42,7 @@ export default function Content() {
           </Emoji>
         </div>
       </MainSlide>
+
       <SubSlideDiv>
         <SubSlide>
           <div className="Slide">

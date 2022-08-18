@@ -18,6 +18,7 @@ export const HeaderDiv = styled.div`
   @media screen and (max-width: 1400px) {
     width: 100%;
   }
+  
   /* background-color: blue; */
 
 `;
@@ -25,6 +26,7 @@ export const Title = styled.h1`
     text-align: left;
     font-size: 50px;
     font-family: 'GmarketSansBold';
+    
 `;
 
 export const Logout = styled.h4`
@@ -57,13 +59,16 @@ export const ContentDiv = styled.div`
   @media screen and (max-width: 1300px) {
   width: 100%;
   }
-  background-color: whitesmoke;
+  color: white;
+  
 `
 export const MainSlide = styled.div`
-position: relative;
+  position: relative;
+
  .Slide{
   max-height: 450px;
-  
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.3);
+  border-radius: 5px;
   overflow: hidden;
   
   img{
@@ -72,6 +77,7 @@ position: relative;
     margin-top: -15%;
   } 
  }
+ 
 `;
 
 export const Emoji = styled.div`
@@ -79,10 +85,12 @@ export const Emoji = styled.div`
   top : 92%;
   right: 44%;
   display: flex;
+  
   .Play{
     img{
     width: 30px;
   }
+  
 }
   .Dot{
     margin-top: 8px;
@@ -132,7 +140,8 @@ export const SubSlide = styled.div`
   
  .Slide{
   max-height: 250px;
-  
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.3);
+  border-radius: 5px;
   overflow: hidden;
   
   img{
@@ -148,7 +157,7 @@ export const SubSlide = styled.div`
 
 export const SubEmoji = styled.div`
   position: absolute;
-  top : 92%;
+  top : 90%;
   right: 34%;
   display: flex;
   .Play{
@@ -192,4 +201,57 @@ export const SubMovieGrade = styled.h3`
   top:30%;
   left: 10%;
   font-family: 'GmarketSansBold';
+`;
+
+export const Site = styled.div`
+  display: flex;
+  justify-content : center;
+  align-items : center;
+  .CGV{
+
+    background-color: #D32E2E;
+  }
+  .MEGA{
+
+    background-color: #0094FF;
+
+  }
+  .LOTTE{
+
+    background-color: #FFC700;
+    
+
+  }
+  #Box{
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    width: 120px;
+    height: 87px;
+    border-radius:10px;
+    font-size: 23px;
+    font-family: 'GmarketSansBold';
+  }
+  a{
+    display: flex;
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    margin: 20px;
+  }
+`;
+
+export const FooterDiv = styled.div`
+  margin-top: 30px;
+  border-top: 2px solid whitesmoke;
+  h4{
+    margin-top: 10px;
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+  }
+  h2{
+    margin-top: 10px;
+    margin-right: 10px;
+    
+    font-family: "GmarketSansBold";
+  }
 `;

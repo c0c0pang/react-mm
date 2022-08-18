@@ -5,6 +5,8 @@ import { GlobalStyles } from "./styles";
 import Header from "./Header";
 import Nav from "./Nav";
 import Content from "./Content";
+import MovieSite from "./MovieSite";
+import Footer from "./Footer";
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
         <Header></Header>
         <Nav></Nav>
         <Content></Content>
+        <MovieSite></MovieSite>
+        <Footer></Footer>
       </AllContents>
     </>
   );
