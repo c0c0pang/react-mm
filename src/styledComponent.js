@@ -44,6 +44,8 @@ export const NavDiv = styled.div`
   font-size: 24px;
   justify-content: space-between;
   margin-top: 50px;
+  
+  text-decoration-line: none;
   /* background-color: gray; */
 `;
 
@@ -235,7 +237,7 @@ export const Site = styled.div`
   a{
     display: flex;
     text-decoration-line: none;
-    color: black;
+    color: white;
     text-align: center;
     margin: 20px;
   }
@@ -255,3 +257,20 @@ export const FooterDiv = styled.div`
     font-family: "GmarketSansBold";
   }
 `;
+
+export const BoardDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+ .box{
+  
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.1);
+  
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  width: 1000px;
+  border-radius: 5px;
+ }
+`;
+
