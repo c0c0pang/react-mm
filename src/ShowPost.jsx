@@ -14,6 +14,7 @@ import {
   ReplTitleDiv,
   ReplWriter,
   Repl,
+  ShowContent,
   WriterDiv,
   ReplInput,
   ReplSubmitDiv,
@@ -25,35 +26,39 @@ const replData = [
 ];
 
 function ShowPost() {
-  const [post, setPost] = useState(null);
+  const [post, setPost] = useState([]);
   const [repls, setRepls] = useState([]);
 
   const Params = useParams();
   const replInput = useRef();
-  const PostAndRepl = React.memo(({ post, repls }) => {
+  const PostAndRepl = React.memo(({ post,repls}) => {
     return (
       <>
         <PostTitleDiv>
-          <PostTitle>{post && post.title}</PostTitle>
+          <PostTitle>{post.title}</PostTitle>
         </PostTitleDiv>
-        repls.map((element) => (
+        <ShowContent>
+        {post.content}
+        </ShowContent>
+        {/* repls.map((element) => (
         <PostReplDiv key={element.id}>
           <ReplWriter>익명</ReplWriter>
           <Repl>{element.content}</Repl>
         </PostReplDiv>
-        ))
+        ) */}
       </>
     );
   });
   useEffect(() => {
     axios
       .get(
-        `https://ac4d84b4-cff2-4fcf-a062-064035a1ab58.mock.pstmn.io/board/posting/${Params.postID}`
+        `https://ac4d84b4-cff2-4fcf-a062-064035a1ab58.mock.pstmn.io/board/postingdetail?id=1/${Params.postID}`
       )
       .then((response) => {
+        console.log(response.data)
         setPost(response.data);
         // setRepls(response.data.repls);
-        replInput.current.focus();
+        // replInput.current.focus();
       });
   }, []);
   useEffect(() => {
@@ -70,7 +75,12 @@ function ShowPost() {
   return (
     <div>
       <PostSection>
-        <PostAndRepl post={post} repls={repls} />
+
+        <PostAndRepl
+          post={post}
+          repls = {repls}
+        />
+
         <WriterDiv>
           <ReplInput ref={replInput} onChange={onChange}></ReplInput>
           <ReplSubmitDiv>

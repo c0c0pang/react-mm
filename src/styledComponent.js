@@ -66,7 +66,9 @@ export const ContentDiv = styled.div`
 `
 export const MainSlide = styled.div`
   position: relative;
-
+  display: grid;
+	grid-template-columns: 450px 450px 450px;
+	grid-template-rows: 300px 300px;
  .Slide{
   max-height: 450px;
   box-shadow:  0 0 1rem 0 rgba(0,0,0,.3);
@@ -261,7 +263,7 @@ export const FooterDiv = styled.div`
 export const BoardDiv = styled.div`
   width: 1000px;
   border-radius: 5px;
-  box-shadow:  0 0 1rem 0 rgba(0,0,0,.3);
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.1);
   
 `;
 export const PostList = styled.div`
@@ -304,7 +306,7 @@ export const ReplInput = styled.textarea`
   padding: 10px;
   height: 30px;
   border-radius: 5px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
 `;
 
 export const ReplSubmitDiv = styled.div`
@@ -312,7 +314,8 @@ export const ReplSubmitDiv = styled.div`
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 5px;
-  background-color: #f39926;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -321,20 +324,21 @@ export const ReplSubmitDiv = styled.div`
 `;
 
 export const PostTitleDiv = styled.div`
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  color: white;
-  background-color: #f39926;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.05);
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 export const PostTitle = styled.span`
   margin-top: 10px;
   margin-bottom: 5px;
-  font-family: "Black Han Sans", sans-serif;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
   font-size: 25px;
 `;
 
@@ -352,4 +356,96 @@ export const ReplWriter = styled.div`
 
 export const Repl = styled.span`
   font-size: 12px;
+`;
+
+export const ShowContent = styled.div`
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  font-size: 25px;
+  padding: 10px;
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.05);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+`;
+
+export const PostWriteDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const PostSubmitDiv = styled.div`
+  width: 15%;
+  margin: 0px auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+`;
+export const PostSubmit = styled.div`
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  font-size: 20px;
+`;
+// export default MediaDiv;
+export const TitleInput = styled.input`
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+`;
+export const ContentsInput = styled.textarea`
+  margin-top: 10px;
+  padding: 10px;
+  height: 400px;
+  border-radius: 5px;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+`;
+
+export const Update = styled.div`
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  display: flex;
+  justify-content : center;
+  align-items : center;
+  font-size: 20px;
+  cursor: pointer;
+`;
+export const WriteSubmit = styled.div`
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  display: flex;
+  justify-content : center;
+  align-items : center;
+  font-size: 20px;
+    
+`;
+export const BigDiv = styled.div`
+display: flex;
+  justify-content: space-between;
+`;
+export const PagingSection = styled.section`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px auto;
+  width: 150px;
+  margin-top: 20px;
+`;
+export const PagenumberDiv = styled.div`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f39926;
+  border-radius: 5px;
 `;

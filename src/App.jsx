@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import Board from "./Board";
 import { Routes, Route } from "react-router-dom";
 import ShowPost from "./ShowPost";
+import WritPost from "./WritPost"
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Content />}></Route>
           <Route path="/Board" element={<Board />}></Route>
           <Route path="/post/:postID" element={<ShowPost />}></Route>
+          <Route path="/WriteBoard" element={<WritPost />}></Route>
         </Routes>
         <MovieSite></MovieSite>
         <Footer></Footer>
