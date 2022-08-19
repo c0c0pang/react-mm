@@ -259,18 +259,97 @@ export const FooterDiv = styled.div`
 `;
 
 export const BoardDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  
- .box{
-  
-  box-shadow:  0 0 1rem 0 rgba(0,0,0,.1);
-  
-  font-family: 'NEXON Lv1 Gothic OTF Light';
   width: 1000px;
   border-radius: 5px;
- }
+  box-shadow:  0 0 1rem 0 rgba(0,0,0,.3);
+  
+`;
+export const PostList = styled.div`
+  padding: 10px;
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  
+  
+`;
+export const BoardSection = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+`;
+export const EachPostLi = styled.li`
+  margin: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
 `;
 
+
+export const PostSection = styled.div`
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const WriterDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const ReplInput = styled.textarea`
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+`;
+
+export const ReplSubmitDiv = styled.div`
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #f39926;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+`;
+
+export const PostTitleDiv = styled.div`
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: white;
+  background-color: #f39926;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const PostTitle = styled.span`
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 25px;
+`;
+
+export const PostReplDiv = styled.div`
+  border-top: 2px solid white;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 24px;
+`;
+export const ReplWriter = styled.div`
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bolder;
+`;
+
+export const Repl = styled.span`
+  font-size: 12px;
+`;

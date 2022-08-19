@@ -7,8 +7,9 @@ import Nav from "./Nav";
 import Content from "./Content";
 import MovieSite from "./MovieSite";
 import Footer from "./Footer";
-import Board from "./Board"
+import Board from "./Board";
 import { Routes, Route } from "react-router-dom";
+import ShowPost from "./ShowPost";
 function App() {
   return (
     <>
@@ -18,9 +19,10 @@ function App() {
         <Nav></Nav>
         {/* <Content></Content> */}
         <Routes>
-            <Route path="/" element={<Content />}></Route>
-            <Route path="/Board" element={<Board />}></Route>
-          </Routes>
+          <Route path="/" element={<Content />}></Route>
+          <Route path="/Board" element={<Board />}></Route>
+          <Route path="/post/:postID" element={<ShowPost />}></Route>
+        </Routes>
         <MovieSite></MovieSite>
         <Footer></Footer>
       </AllContents>
