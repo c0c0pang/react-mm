@@ -34,7 +34,6 @@ import {
 import CardList from "./CardList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Content() {
-  const APIKEY = "bc44002962513d9b01bc57ea2304acc7";
 console.log(APIKEY);
 const [pages, setPages] = useState([]);
 const now_playingURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + APIKEY + "&language=en-US&page=1";
